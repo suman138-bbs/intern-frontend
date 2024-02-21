@@ -27,8 +27,8 @@ const Analytics = () => {
   }
 
   return (
-    <div>
-      <h1>List of company you have applied</h1>
+    <div className="flex flex-col gap-4">
+      <h1 className="font-bold">List of company you have applied</h1>
       <div className="grid grid-cols-4 gap-2">
         {appliedInternships.map((internship) => (
           <div key={internship._id} className="shadow-md px-4 py-2 rounded">
