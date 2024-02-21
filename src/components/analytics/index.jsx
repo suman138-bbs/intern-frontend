@@ -27,17 +27,21 @@ const Analytics = () => {
   }
 
   return (
-    <div className="grid grid-cols-4 gap-2">
-      {appliedInternships.map((internship) => (
-        <div key={internship._id} className="shadow-md px-4 py-2 rounded">
-          <h1>
-            <span className="font-bold">Company Name :</span> {internship.name}
-          </h1>
-          <h1>
-            <span className="font-bold">Role :</span> {internship.role}
-          </h1>
-        </div>
-      ))}
+    <div>
+      <h1>List of company you have applied</h1>
+      <div className="grid grid-cols-4 gap-2">
+        {appliedInternships.map((internship) => (
+          <div key={internship._id} className="shadow-md px-4 py-2 rounded">
+            <h1>
+              <span className="font-bold">Company Name :</span>{" "}
+              {internship.name}
+            </h1>
+            <h1>
+              <span className="font-bold">Role :</span> {internship.role}
+            </h1>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
